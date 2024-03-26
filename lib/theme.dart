@@ -8,5 +8,26 @@ class AppColors {
   static Color titleColor = const Color.fromRGBO(200, 200, 200, 1);
   static Color textColor = const Color.fromRGBO(150, 150, 150, 1);
   static Color succeessColor = const Color.fromRGBO(9, 149, 110, 1);
-  static Color highlightColor = const Color.fromRGBO(212, 172, 13, 1);
+  static Color highlightColor = const Color.fromRGBO(212, 172, 13, 1); 
 }
+
+ThemeData primaryTheme = ThemeData(
+
+  // seed color
+  colorScheme: ColorScheme.fromSeed(
+    seedColor:  AppColors.primaryColor
+  ),
+
+// Scaffold Color
+scaffoldBackgroundColor: AppColors.secondaryAccent,
+
+// App Bar theme color
+appBarTheme: AppBarTheme(
+  backgroundColor: AppColors.secondaryColor,
+  foregroundColor: AppColors.textColor,
+  surfaceTintColor: Colors.transparent,
+  centerTitle: true,
+),
+
+
+);
