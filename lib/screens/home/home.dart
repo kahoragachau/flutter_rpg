@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -8,6 +9,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  List characters = ['Mario', 'Luigi', 'Peach', 'Toad', 'Bowser', 'Koopa'];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +24,19 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             const Text("Character List"),
+            Expanded(
+              child: ListView.builder(
+                itemCount: characters.length,
+                itemBuilder: (_, index) {
+                  return Container(
+                    color: Colors.green[800],
+                    padding: const EdgeInsets.all(40),
+                    margin: const EdgeInsets.only(bottom: 40),
+                    child: Text(characters[index]),
+                  );
+                },
+              ),
+            ),
             FilledButton(
               onPressed: () {}, 
               child: const Text("Create New")
