@@ -49,4 +49,11 @@ textTheme: TextTheme(
   )
 ),
 
+// CardTheme
+cardTheme: CardTheme(
+  color: AppColors.secondaryColor,
+  // remove the generated seed color
+  surfaceTintColor: Colors.transparent,
+)
+
 );
