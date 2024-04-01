@@ -6,4 +6,8 @@ class Character {
   final String slogan;
   final String id;
   bool _isFav = false;
+
+  void toggleIsFav() {
+    _isFav = !_isFav;
+  }
 }
