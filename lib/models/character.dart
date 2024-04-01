@@ -1,5 +1,12 @@
 class Character {
 
+  // constructor
+  Character({
+    required this.name,
+    required this.slogan,
+    required this.id,
+  });
+
   // fields: note that keyword 'final' basically means the value won't change in the future, 
   //         the '_' is used to represent a private field
   final String name;
