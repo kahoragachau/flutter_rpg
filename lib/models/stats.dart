@@ -7,6 +7,17 @@ mixin Stats {
   int _defense = 10;
   int _skill = 10;
 
+  // Set Getters for the private fields
+  int get points => _points;
+
+  // map the remaining getter fields
+  Map<String, int> get statsAsMap => {
+    "health": _health,
+    "attack": _attack,
+    "defense": _defense,
+    "skill": _skill
+  };
+
   void increaseStat(String stat) {
     if (_points > 0) {
       if (stat == 'health') {

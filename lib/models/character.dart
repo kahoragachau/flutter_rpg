@@ -16,6 +16,10 @@ class Character with Stats {
   final String id;
   bool _isFav = false;
 
+  // getter, use getters to allow access for _isFav which is a private field
+
+  bool get isFav => _isFav;
+
   void toggleIsFav() {
     _isFav = !_isFav;
   }
