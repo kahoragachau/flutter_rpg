@@ -18,6 +18,14 @@ mixin Stats {
     "skill": _skill
   };
 
+  // List the map to a formatted list
+  List<Map<String,String>> get statsAsFormattedList =>[
+    {'title': 'health', 'value': _health.toString()},
+    {'title': 'attack', 'value': _attack.toString()},
+    {'title': 'defense', 'value': _defense.toString()},
+    {'title': 'skill', 'value': _skill.toString()}
+  ];
+
   void increaseStat(String stat) {
     if (_points > 0) {
       if (stat == 'health') {
