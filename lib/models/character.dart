@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter_rpg/models/skill.dart';
 import 'package:flutter_rpg/models/stats.dart';
 import 'package:flutter_rpg/models/vocation.dart';
@@ -6,10 +8,10 @@ class Character with Stats {
 
   // constructor
   Character({
-    required this.name,
-    required this.slogan,
-    required this.vocation,
     required this.id,
+    required this.name,
+    required this.vocation,
+    required this.slogan,
   });
 
   // fields: note that keyword 'final' basically means the value won't change in the future, 
@@ -35,3 +37,11 @@ class Character with Stats {
     skills.add(skill);
   }
 }
+
+// Character Dummy Data
+List<Character> characters = [
+  Character(id: "1", name: "Klara", vocation: Vocation.wizard, slogan: "Kapumf!"),
+  Character(id: "2", name: "Johnny", vocation: Vocation.junkie, slogan: "Light me up..."),
+  Character(id: "3", name: "Crimson", vocation: Vocation.raider, slogan: "Fire in the hole!"),
+  Character(id: "4", name: "Shaun", vocation: Vocation.ninja, slogan: "Alright then gang.")
+];
