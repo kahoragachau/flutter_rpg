@@ -5,7 +5,7 @@ enum Vocation {
     description: "Adept in terminal commands to trigger traps.",
     weapon: "Terminal",
     ability: "Shellshock",
-    image: "termina_raider.jpg",
+    image: "terminal_raider.jpg",
   ),
 
   junkie(
