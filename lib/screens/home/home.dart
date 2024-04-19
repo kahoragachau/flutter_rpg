@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_rpg/models/character.dart';
 import 'package:flutter_rpg/screens/home/character_card.dart';
 
 class Home extends StatefulWidget {
@@ -10,8 +11,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
-  List characters = ['Mario', 'Luigi', 'Peach', 'Toad', 'Bowser', 'Koopa'];
 
   @override
   Widget build(BuildContext context) {

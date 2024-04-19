@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rpg/models/character.dart';
 import 'package:flutter_rpg/theme.dart';
 
 class CharacterCard extends StatelessWidget {
   const CharacterCard(this.character,{super.key});
 
-  final String character;
+  final Character character;
 
   @override
   Widget build(BuildContext context) {
