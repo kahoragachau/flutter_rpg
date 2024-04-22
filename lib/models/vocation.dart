@@ -27,7 +27,7 @@ enum Vocation {
     description: "Carries a staff to unleash algorithm magic",
     weapon: "Crystal Staff",
     ability: "Algorithmic Daze",
-    image: "algo_wizard.jpg "
+    image: "algo_wizard.jpg"
   );
 
   const Vocation({
