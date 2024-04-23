@@ -39,6 +39,7 @@ class _CreateState extends State<Create> {
               style: GoogleFonts.kanit(
                 textStyle: Theme.of(context).textTheme.bodyMedium,
               ),
+              cursorColor: AppColors.textColor,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.person_2),
                 label: StyledText('Character Name')
@@ -50,6 +51,7 @@ class _CreateState extends State<Create> {
               style: GoogleFonts.kanit(
                 textStyle: Theme.of(context).textTheme.bodyMedium
               ),
+              cursorColor: AppColors.textColor,
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.chat),
                 label: StyledText("Character Slogan")
