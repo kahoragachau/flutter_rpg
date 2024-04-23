@@ -40,7 +40,7 @@ class _CreateState extends State<Create> {
                 label: StyledText('Character Name')
               ),
             ),
-            const SizedBox(height: 0,),
+            const SizedBox(height: 20,),
 
             const TextField(
               decoration: InputDecoration(
