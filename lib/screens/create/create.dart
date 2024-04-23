@@ -32,6 +32,22 @@ class _CreateState extends State<Create> {
               child: StyledText("Create a name & slogan for your character."),
             ),
             const SizedBox(height: 30),
+
+            // input fields for slogan and name
+            const TextField(
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.person_2),
+                label: StyledText('Character Name')
+              ),
+            ),
+            const SizedBox(height: 0,),
+
+            const TextField(
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.chat),
+                label: StyledText("Character Slogan")
+              ),
+            )
           ],
         ),
       ),
