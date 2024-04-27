@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_print
-
 import 'package:flutter/material.dart';
 import 'package:flutter_rpg/models/vocation.dart';
 import 'package:flutter_rpg/screens/create/vocation_card.dart';
@@ -42,17 +40,12 @@ class _CreateState extends State<Create> {
   // Submit Character
   void handleSubmit() {
     if(_nameController.text.trim().isEmpty) {
-      print("Name must not be empty");
       return;
     }
 
     if (_sloganController.text.trim().isEmpty) {
-      print("Slogan must not be empty");
       return;
     }
-
-    print(_nameController.text);
-    print(_sloganController.text);
   }
   @override
   Widget build(BuildContext context) {
