@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rpg/models/character.dart';
 import 'package:flutter_rpg/models/vocation.dart';
 import 'package:flutter_rpg/screens/create/vocation_card.dart';
 import 'package:flutter_rpg/shared/styled_button.dart';
@@ -46,6 +47,13 @@ class _CreateState extends State<Create> {
     if (_sloganController.text.trim().isEmpty) {
       return;
     }
+
+    characters.add(Character(
+      id: uuid.v4(), 
+      name: _nameController.text.trim(), 
+      vocation: selectedVocation, 
+      slogan: _sloganController.text.trim()
+    ));
   }
   @override
   Widget build(BuildContext context) {
