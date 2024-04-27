@@ -7,8 +7,9 @@ import 'package:flutter_rpg/shared/styled_button.dart';
 import 'package:flutter_rpg/shared/styled_text.dart';
 import 'package:flutter_rpg/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:uuid/data.dart';
+import 'package:uuid/uuid.dart';
 
+var uuid = const Uuid();
 class Create extends StatefulWidget {
   const Create({super.key});
 
