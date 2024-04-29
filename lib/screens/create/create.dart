@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rpg/models/character.dart';
 import 'package:flutter_rpg/models/vocation.dart';
 import 'package:flutter_rpg/screens/create/vocation_card.dart';
+import 'package:flutter_rpg/screens/home/home.dart';
 import 'package:flutter_rpg/shared/styled_button.dart';
 import 'package:flutter_rpg/shared/styled_text.dart';
 import 'package:flutter_rpg/theme.dart';
@@ -54,6 +55,8 @@ class _CreateState extends State<Create> {
       vocation: selectedVocation, 
       slogan: _sloganController.text.trim()
     ));
+
+    Navigator.push(context, MaterialPageRoute(builder: (ctx) => const Home(),));
   }
   @override
   Widget build(BuildContext context) {
@@ -145,6 +148,18 @@ class _CreateState extends State<Create> {
                 onTap: updateVocation,
                 vocation: Vocation.wizard,
               ),
+
+              // good luck message
+              Center(
+                child: Icon(Icons.code, color: AppColors.primaryColor,),
+              ),
+              const Center(
+                child: StyledHeading("good luck"),
+              ),
+              const Center(
+                child: StyledText('and enjoy the Journey...'),
+              ),
+              const SizedBox(height: 30,),
           
               // Create Character Button 
           

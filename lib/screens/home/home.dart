@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_rpg/models/character.dart';
+import 'package:flutter_rpg/screens/create/create.dart';
 import 'package:flutter_rpg/screens/home/character_card.dart';
 
 class Home extends StatefulWidget {
@@ -33,7 +34,9 @@ class _HomeState extends State<Home> {
               ),
             ),
             FilledButton(
-              onPressed: () {}, 
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (ctx) => const Create()));
+              }, 
               child: const Text("Create New")
               ),
           ],
