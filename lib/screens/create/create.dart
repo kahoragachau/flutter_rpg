@@ -50,7 +50,9 @@ class _CreateState extends State<Create> {
           content: const StyledText('Every good rpg character needs a great name ...'),
           actions: [
             StyledButton(
-              onPressed: () {}, 
+              onPressed: () {
+                Navigator.pop(ctx);
+              }, 
               child: const StyledHeading('Close'),)
           ],
           actionsAlignment: MainAxisAlignment.center,
@@ -67,7 +69,9 @@ class _CreateState extends State<Create> {
           content: const StyledText('Every Character Needs a great Slogan'),
           actions: [
             StyledButton(
-              onPressed: () {}, 
+              onPressed: () {
+                Navigator.pop(ctx);
+              }, 
               child: const StyledHeading('Close'))
           ],
           actionsAlignment: MainAxisAlignment.center,
