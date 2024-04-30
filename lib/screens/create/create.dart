@@ -49,8 +49,11 @@ class _CreateState extends State<Create> {
           title: const StyledHeading('Missing Character Name'),
           content: const StyledText('Every good rpg character needs a great name ...'),
           actions: [
-            StyledButton(onPressed: () {}, child: const StyledHeading('Close'),)
+            StyledButton(
+              onPressed: () {}, 
+              child: const StyledHeading('Close'),)
           ],
+          actionsAlignment: MainAxisAlignment.center,
         );
       });
       return;
@@ -63,8 +66,11 @@ class _CreateState extends State<Create> {
           title: const StyledHeading('Missing Slogan'),
           content: const StyledText('Every Character Needs a great Slogan'),
           actions: [
-            StyledButton(onPressed: () {}, child: const StyledHeading('Close'))
+            StyledButton(
+              onPressed: () {}, 
+              child: const StyledHeading('Close'))
           ],
+          actionsAlignment: MainAxisAlignment.center,
         );
       });
 
