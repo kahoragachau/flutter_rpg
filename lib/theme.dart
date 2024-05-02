@@ -65,4 +65,11 @@ inputDecorationTheme: InputDecorationTheme(
   prefixIconColor: AppColors.textColor
 ),
 
+
+// Dialog Theme
+dialogTheme: DialogTheme(
+  backgroundColor: AppColors.secondaryAccent,
+  surfaceTintColor: Colors.transparent,
+)
+
 );
