@@ -68,7 +68,7 @@ class Profile extends StatelessWidget {
                     const SizedBox(height: 10,),
 
                     const StyledHeading('Unique ability'),
-                    StyledText(character.vocation.weapon),
+                    StyledText(character.vocation.ability),
                     const SizedBox(height: 10,),
                   ],
                 ),
