@@ -69,7 +69,11 @@ class _StatsTableState extends State<StatsTable> {
                     verticalAlignment: TableCellVerticalAlignment.middle,
                     child: IconButton(
                       icon: Icon(Icons.arrow_upward, color: AppColors.textColor,),
-                      onPressed: () {},
+                      onPressed: () {
+                        setState(() {
+                          widget.character.increaseStat(stat['title']!);
+                        });
+                      },
                     )
                   ),
 
