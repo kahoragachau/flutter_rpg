@@ -82,7 +82,11 @@ class _StatsTableState extends State<StatsTable> {
                     verticalAlignment: TableCellVerticalAlignment.middle,
                     child: IconButton(
                       icon: Icon(Icons.arrow_downward, color: AppColors.textColor,),
-                      onPressed: () {},
+                      onPressed: () {
+                        setState(() {
+                          widget.character.decreaseStat(stat['title']!);
+                        });
+                      },
                     ),
                   )
                 ]
