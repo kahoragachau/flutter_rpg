@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_rpg/models/character.dart';
@@ -36,7 +37,54 @@ class _StatsTableState extends State<StatsTable> {
                 StyledHeading(widget.character.points.toString()),
               ],
             ),
-          )
+          ),
+
+          // Stats Table
+          Table(
+            children: widget.character.statsAsFormattedList.map((stat) {
+              return TableRow(
+                children: [
+
+                  // Stat title
+                  TableCell(
+                    verticalAlignment: TableCellVerticalAlignment.middle,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: StyledHeading(stat['title']!),
+                    ),
+                  ),
+
+                  // Stat Value
+                  TableCell(
+                    verticalAlignment: TableCellVerticalAlignment.middle,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: StyledHeading(stat['value']!),
+                    ),
+                  ),
+
+                  // Increase Stat Icon
+
+                  TableCell(
+                    verticalAlignment: TableCellVerticalAlignment.middle,
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_upward, color: AppColors.textColor,),
+                      onPressed: () {},
+                    )
+                  ),
+
+                  // Decrease Stat Icon
+                  TableCell(
+                    verticalAlignment: TableCellVerticalAlignment.middle,
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_downward, color: AppColors.textColor,),
+                      onPressed: () {},
+                    ),
+                  )
+                ]
+              );
+            }
+          ).toList()),
         ],
       ),
     );
