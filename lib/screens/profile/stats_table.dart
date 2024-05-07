@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_rpg/models/character.dart';
 import 'package:flutter_rpg/shared/styled_text.dart';
 import 'package:flutter_rpg/theme.dart';
