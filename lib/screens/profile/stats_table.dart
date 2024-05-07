@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_rpg/models/character.dart';
+import 'package:flutter_rpg/shared/styled_text.dart';
 import 'package:flutter_rpg/theme.dart';
 
 class StatsTable extends StatefulWidget {
@@ -20,8 +22,20 @@ class _StatsTableState extends State<StatsTable> {
           // Available points
 
           Container(
-            color: AppColors.secondaryAccent,
-            padding: ,
+            color: AppColors.secondaryColor,
+            padding: const EdgeInsets.all(8),
+            child: Row(
+              children: [
+                Icon(Icons.star,
+                // Add terniary operator to check if there available points display yellow else grey
+                  color: widget.character.points > 0 ? Colors.yellow : Colors.grey
+                ),
+                const SizedBox(width: 20,),
+                const StyledText('Stat points available: '),
+                const Expanded(child: SizedBox(width: 20,)),
+                StyledHeading(widget.character.points.toString()),
+              ],
+            ),
           )
         ],
       ),
