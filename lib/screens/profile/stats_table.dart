@@ -43,6 +43,9 @@ class _StatsTableState extends State<StatsTable> {
           Table(
             children: widget.character.statsAsFormattedList.map((stat) {
               return TableRow(
+                decoration: BoxDecoration(
+                  color: AppColors.secondaryColor.withOpacity(0.5),
+                ),
                 children: [
 
                   // Stat title
