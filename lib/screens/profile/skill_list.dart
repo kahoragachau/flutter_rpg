@@ -44,8 +44,8 @@ class _SkillListState extends State<SkillList> {
                   margin: const EdgeInsets.all(5),
                   padding: const EdgeInsets.all(2),
                   child: Image.asset('assets/img/skills/${skill.image}', width: 70,),
-                )
-              }).toList();
+                );
+              }).toList()
             )
           ],
         ),
