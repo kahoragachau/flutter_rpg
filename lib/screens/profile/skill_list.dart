@@ -53,7 +53,15 @@ class _SkillListState extends State<SkillList> {
                   margin: const EdgeInsets.all(5),
                   padding: const EdgeInsets.all(2),
                   color: skill == selectedSkill ? Colors.yellow : Colors.transparent,
-                  child: Image.asset('assets/img/skills/${skill.image}', width: 70,),
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        widget.character.updateSkill(skill);
+                        selectedSkill = skill;
+                      });
+                  },
+                  child: Image.asset('assets/img/skills/${skill.image}', width: 70,)
+                ),
                 );
               }).toList()
             )
