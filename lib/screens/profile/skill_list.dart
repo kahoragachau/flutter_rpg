@@ -16,12 +16,21 @@ class SkillList extends StatefulWidget {
 class _SkillListState extends State<SkillList> {
   // will be available later thats why we us late
   late List<Skill> availableSkill;
+  late Skill selectedSkill;
 
   @override
   void initState() {
     availableSkill = allSkills.where((skill) {
       return skill.vocation == widget.character.vocation;
     }).toList();
+
+    if (widget.character.skills.isEmpty) {
+      selectedSkill = availableSkill[0];
+    }
+
+    if (widget.character.skills.isNotEmpty) {
+      selectedSkill = widget.character.skills.first;      
+    }
     super.initState();
   }
 
