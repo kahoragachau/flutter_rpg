@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rpg/models/character.dart';
+import 'package:flutter_rpg/screens/profile/skill_list.dart';
 import 'package:flutter_rpg/screens/profile/stats_table.dart';
 import 'package:flutter_rpg/shared/styled_text.dart';
 import 'package:flutter_rpg/theme.dart';
@@ -81,7 +82,8 @@ class Profile extends StatelessWidget {
               alignment: Alignment.center,
               child: Column(
                 children: [
-                  StatsTable(character)
+                  StatsTable(character),
+                  SkillList(character),
                 ],
               ),
             )
