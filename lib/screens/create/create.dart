@@ -10,14 +10,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:uuid/uuid.dart';
 
 var uuid = const Uuid();
-class Create extends StatefulWidget {
-  const Create({super.key});
+class CreateScreen extends StatefulWidget {
+  const CreateScreen({super.key});
 
   @override
-  State<Create> createState() => _CreateState();
+  State<CreateScreen> createState() => _CreateState();
 }
 
-class _CreateState extends State<Create> {
+class _CreateState extends State<CreateScreen> {
 
   final _nameController = TextEditingController();
   final _sloganController =TextEditingController();
