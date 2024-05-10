@@ -83,4 +83,5 @@ class DefaultFirebaseOptions {
     authDomain: 'fir-masterclass-549ba.firebaseapp.com',
     storageBucket: 'fir-masterclass-549ba.appspot.com',
   );
+
 }
