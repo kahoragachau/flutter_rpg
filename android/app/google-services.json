@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588004312825",
+    "project_id": "fir-masterclass-549ba",
+    "storage_bucket": "fir-masterclass-549ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588004312825:android:7af7841f386fd253b3c428",
+        "android_client_info": {
+          "package_name": "com.example.flutter_rpg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGK3uhBmybHKMvm-n2y29byEote84v8Cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
