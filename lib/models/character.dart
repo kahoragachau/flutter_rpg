@@ -36,6 +36,7 @@ class Character with Stats {
     skills.add(skill);
   }
 
+// Below we are serializing and deserializing to and from firestore
   // Character to Firestore (map)
   Map<String, dynamic> toFirestore() {
     return {
