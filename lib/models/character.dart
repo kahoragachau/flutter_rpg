@@ -88,3 +88,4 @@ List<Character> characters = [
   Character(id: "3", name: "Crimson", vocation: Vocation.raider, slogan: "Fire in the hole!"),
   Character(id: "4", name: "Shaun", vocation: Vocation.ninja, slogan: "Alright then gang.")
 ];
+
