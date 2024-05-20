@@ -14,4 +14,7 @@ class FirestoreService {
   static Future<void> addCharacter(Character character) async{
     await ref.doc(character.id).set(character);
   }
+
+  // fetch characters from firestore
+  
 }
