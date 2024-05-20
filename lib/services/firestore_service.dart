@@ -16,5 +16,8 @@ class FirestoreService {
   }
 
   // fetch characters from firestore
-  
+  static Future<QuerySnapshot<Character>> getCharactersOnce() {
+    return ref.get();
+  }
+
 }
