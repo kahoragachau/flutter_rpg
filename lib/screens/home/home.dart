@@ -30,7 +30,6 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            const Text("Character List"),
             Expanded(
               child: Consumer<CharacterStore>(
                 builder: (context, value, child) {
