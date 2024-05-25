@@ -25,6 +25,8 @@ class _HeartState extends State<Heart> with SingleTickerProviderStateMixin{
       TweenSequenceItem<double>(tween: Tween(begin: 25, end: 40), weight: 50),
       TweenSequenceItem<double>(tween: Tween(begin: 40, end: 25), weight: 50)
     ]).animate(_controller);
+
+    super.initState();
   }
 
   @override
